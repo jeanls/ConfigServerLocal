@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///${user.home}/config-repo
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  application:
+    name: ConfigServer
+
+server:
+  port: 8012
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
