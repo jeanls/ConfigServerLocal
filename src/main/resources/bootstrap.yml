@@ -1,2 +1,6 @@
 encrypt:
   key: aklsjdkljhakjshjhJHJKAHSjdhkhkaHHhsakjdh
+#  key-store:
+#    location: file:///${user.home}/java.jks
+#    password: qwerty
+#    alias: key0
